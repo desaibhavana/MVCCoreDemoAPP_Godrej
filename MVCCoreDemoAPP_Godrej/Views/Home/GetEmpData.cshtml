@@ -1,0 +1,16 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "GetEmpData";
+}
+
+<h1>GetEmpData</h1>
+
+<form asp-action="ReadEmpData"  asp-controller="Home" method="post">
+    <input type="text"  asp-for="FirstName" />
+    
+    <br/>
+    <input type="text" asp-for="LastName" />
+    <br/>
+    <input type="submit" />
+</form>
+

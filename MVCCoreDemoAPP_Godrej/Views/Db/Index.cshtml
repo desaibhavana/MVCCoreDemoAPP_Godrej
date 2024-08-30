@@ -1,0 +1,21 @@
+﻿@model IEnumerable<ADOLibrary.Employee>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+ <table>
+     @foreach (var item in Model)
+    {
+       <tr>
+           <td>@item.EmpNo</td>
+           <td>@item.EmpName</td>
+           <td>@item.HireDate</td>
+           <td>@item.Salary</td>
+       </tr>
+
+    }
+ </table>

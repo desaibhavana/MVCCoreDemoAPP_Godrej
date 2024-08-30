@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Dept>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table>
+    @foreach (var item in Model)
+    {
+       <tr>
+           <td>@item.Deptno</td>
+           <td>@item.Dname</td>
+           <td>@item.Loc</td>
+</tr>
+
+    }
+</table>
+
